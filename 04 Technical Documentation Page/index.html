@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentarion Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>CSS: Cascading Style Sheets</header>
+
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li>
+          <a href="#Learn_to_style_HTML_using_CSS" class="nav-link">Learn to style HTML using CSS</a>
+        </li>
+        <li>
+          <a href="#CSS_first_steps" class="nav-link">CSS first steps</a>
+        </li>
+        <li>
+          <a href="#Adding_CSS_to_the_document" class="nav-link">Adding CSS to the document</a>
+        </li>
+        <li>
+          <a href="#Styling_HTML_elements" class="nav-link">Styling HTML elements</a>
+        </li>
+        <li>
+          <a href="#Adding_a_class" class="nav-link">Adding a class</a>
+        </li>
+        <li>
+          <a href="#Pseudo-classes" class="nav-link">Pseudo-classes</a>
+        </li>
+        <li>
+          <a href="#Pseudo-elements" class="nav-link">Pseudo-elements</a>
+        </li>
+        <li>
+          <a href="#CSS_Logical_Properties_and_Values" class="nav-link">
+            CSS Logical Properties and Values
+          </a>
+        </li>
+        <li>
+            <a href="#References">References</a>
+        </li>
+        
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+
+        <p>
+          <strong>CSS (Cascading Style Sheets)</strong> is a declarative
+          language that controls how webpages look in the browser.
+        </p>
+
+        <p>
+          The browser applies CSS style declarations to selected elements to
+          display them properly. A style declaration contains the properties and
+          their values, which determine how a webpage looks.
+        </p>
+
+        <p>
+          CSS is one of the three core Web technologies, along with HTML and
+          JavaScript. CSS usually styles HTML elements, but can be also used
+          with other markup languages like SVG or XML.
+        </p>
+
+        <p>
+          A CSS rule is a set of properties associated with a selector.
+          "Cascading" refers to the rules that govern how selectors are
+          prioritized to change a page's appearance. This is a very important
+          feature, since a complex website can have thousands of CSS rules.
+        </p>
+      </section>
+
+      <section class="main-section" id="Learn_to_style_HTML_using_CSS">
+        <header>Learn to style HTML using CSS</header>
+        <p>
+          Cascading Stylesheets — or CSS — is the first technology you should
+          start learning after HTML. While HTML is used to define the structure
+          and semantics of your content, CSS is used to style it and lay it out.
+          For example, you can use CSS to alter the font, color, size, and
+          spacing of your content, split it into multiple columns, or add
+          animations and other decorative features.
+        </p>
+
+        <h4>Prerequisites</h4>
+        <li>
+          You should learn the basics of HTML before attempting any CSS. We
+          recommend that you work through our Introduction to HTML module first.
+        </li>
+        <li>
+          Once you understand the fundamentals of HTML, we recommend that you
+          learn further HTML and CSS at the same time, moving back and forth
+          between the two topics. This is because HTML is far more interesting
+          and much more fun to learn when you apply CSS, and you can't really
+          learn CSS without knowing HTML.
+        </li>
+        <li>
+          Before starting this topic, you should also be familiar with using
+          computers and using the web passively (i.e., just looking at it,
+          consuming the content). You should have a basic work environment set
+          up as detailed in Installing basic software and understand how to
+          create and manage files, as detailed in Dealing with files — both of
+          which are parts of our
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web"
+          >
+            Getting started with the web</a
+          >
+          complete beginner's module.
+        </li>
+      </section>
+
+      <section class="main-section" id="CSS_first_steps">
+        <header>CSS first steps</header>
+        <p>
+          This module provides a gentle beginning to your path towards CSS
+          mastery with the basics of how it works, what the syntax looks like,
+          and how you can start using it to add styling to HTML.
+        </p>
+
+        <h4>Prerequisites</h4>
+        <li>
+          Basic familiarity with using computers, and using the Web passively
+          (i.e. looking at it, consuming the content.)
+        </li>
+        <li>
+          A basic work environment set up as detailed in Installing basic
+          software, and an understanding of how to create and manage files, as
+          detailed in Dealing with files.
+        </li>
+        <li>
+          Basic familiarity with HTML, as discussed in the Introduction to HTML
+          module.
+        </li>
+      </section>
+
+      <section class="main-section" id="Adding_CSS_to_the_document">
+        <header>Adding CSS to the document</header>
+        <p>
+          The very first thing we need to do is to tell the HTML document that
+          we have some CSS rules we want it to use. There are three different
+          ways to apply CSS to an HTML document that you'll commonly come
+          across, however, for now, we will look at the most usual and useful
+          way of doing so — linking CSS from the head of your document.
+        </p>
+        <p>
+          Create a file in the same folder as your HTML document and save it as
+          <span>styles.css</span>. The <span>.css</span> extension shows that
+          this is a CSS file.
+        </p>
+        <p>
+          To link <span>styles.css</span> to <span>index.html</span> add the
+          following line somewhere inside the &lt;head&gt; of the HTML document:
+        </p>
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+        <p>
+          This <span>&lt;link&gt;</span> element tells the browser that we have
+          a stylesheet, using the <span>rel</span> attribute, and the location
+          of that stylesheet as the value of the href attribute. You can test
+          that the CSS works by adding a rule to <span>styles.css</span>. Using
+          your code editor add the following to your CSS file:
+        </p>
+        <code>h1 { color: red; }</code>
+      </section>
+
+      <section class="main-section" id="Styling_HTML_elements">
+        <header>Styling HTML elements</header>
+        <p>
+          By making our heading red we have already demonstrated that we can
+          target and style an HTML element. We do this by targeting an element
+          selector — this is a selector that directly matches an HTML element
+          name. To target all paragraphs in the document you would use the
+          selector p. To turn all paragraphs green you would use:
+        </p>
+        <code>p { color: green; }</code>
+        <p>
+          You can target multiple selectors at once, by separating the selectors
+          with a comma. If I want all paragraphs and all list items to be green
+          my rule looks like this:
+        </p>
+        <code>p, li { color: green; }</code>
+      </section>
+
+      <section class="main-section" id="Adding_a_class">
+        <header>Adding a class</header>
+        <p>
+          So far we have styled elements based on their HTML element names. This
+          works as long as you want all of the elements of that type in your
+          document to look the same. Most of the time that isn't the case and so
+          you will need to find a way to select a subset of the elements without
+          changing the others. The most common way to do this is to add a class
+          to your HTML element and target that class.
+        </p>
+        <p>
+          In your HTML document, add a class attribute to the second list item.
+          Your list will now look like this:
+        </p>
+        <code>
+          <p>&lt;ul&gt;</p>
+          <p>&lt;li&gt;Item one&lt;/li&gt;</p>
+          <p>&lt;li class="special"&gt;Item two&lt;/li&gt;</p>
+          <p>&lt;li&gt;Item &lt;em&gt;three&lt;/em>&lt;/li&gt;</p>
+          <p>&lt;/ul&gt;</p>
+        </code>
+        <p>
+          In your CSS you can target the class of <span>special</span> by
+          creating a selector that starts with a full stop character. Add the
+          following to your CSS file:
+        </p>
+        <code>
+          <p>.special {</p>
+          <p></p>
+          <p>color: orange;</p>
+          <p>font-weight: bold;</p>
+          <p>}</p>
+        </code>
+        <p>
+          You can apply the class of <span>special</span> to any element on your
+          page that you want to have the same look as this list item.
+        </p>
+      </section>
+
+      <section class="main-section" id="Pseudo-classes">
+        <header>Pseudo-classes</header>
+        <p>
+          A CSS pseudo-class is a keyword added to a selector that specifies a
+          special state of the selected element(s).
+        </p>
+        <p>
+          For example, <span>:hover</span> can be used to change a button's
+          color when the user's pointer hovers over it.
+        </p>
+        <code>
+          <p>/* Any button over which the user's pointer is hovering */</p>
+          <p>button:hover {</p>
+          <p>color: blue;</p>
+          <p>}</p>
+        </code>
+
+        <p>
+          Pseudo-classes let you apply a style to an element not only in
+          relation to the content of the document tree, but also in relation to
+          external factors like the history of the navigator
+          (<span>:visited</span>, for example), the status of its content (like
+          <span>:checked</span> on certain form elements), or the position of
+          the mouse (like <span>:hover</span>, which lets you know if the mouse
+          is over an element or not).
+        </p>
+      </section>
+
+      <section class="main-section" id="Pseudo-elements">
+        <header>Pseudo-elements</header>
+        <p>
+          A CSS pseudo-element is a keyword added to a selector that lets you
+          style a specific part of the selected element(s).
+        </p>
+        <p>
+          For example, <span>::first-line</span> can be used to change the font
+          of the first line of a paragraph.
+        </p>
+
+        <code>
+          <p>/* The first line of every &lt;p&gt; element. */</p>
+          <p></p>
+          <p>p::first-line {</p>
+          <p>color: blue;</p>
+          <p>text-transform: uppercase;</p>
+          <p>}</p>
+        </code>
+
+        <p>
+          You can use only one pseudo-element in a selector. It must appear
+          after the simple selectors in the statement.
+        </p>
+      </section>
+
+      <section class="main-section" id="CSS_Logical_Properties_and_Values">
+        <header>CSS Logical Properties and Values</header>
+        <p>
+          CSS Logical Properties and Values is a module of CSS introducing
+          logical properties and values that provide the ability to control
+          layout through logical, rather than physical, direction and dimension
+          mappings.
+        </p>
+        <p>
+          The module also defines logical properties and values for properties
+          previously defined in CSS 2.1. Logical properties define
+          direction‐relative equivalents of their corresponding physical
+          properties.
+        </p>
+
+        <h4>Block vs. Inline</h4>
+        <p>
+          Logical properties and values use the abstract terms block and inline
+          to describe the direction in which they flow. The physical meaning of
+          these terms depends on the writing mode.
+        </p>
+        <p><strong>Block dimension</strong></p>
+        <li>
+          The dimension perpendicular to the flow of text within a line, i.e.,
+          the vertical dimension in horizontal writing modes, and the horizontal
+          dimension in vertical writing modes. For standard English text, it is
+          the vertical dimension.
+        </li>
+        <p><strong>Inline dimension</strong></p>
+        <li>
+          The dimension parallel to the flow of text within a line, i.e., the
+          horizontal dimension in horizontal writing modes, and the vertical
+          dimension in vertical writing modes. For standard English text, it is
+          the horizontal dimension.
+        </li>
+      </section>
+
+      <section class="main-section" id="References">
+          <header>References</header>
+          <li>All documentation in this page is taken form
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN</a>
+          </li>
+      </section>
+
+
+      <footer>
+        Coded by <strong>Andhre</strong> |
+        <a target="_blank" href="https://codepen.io/mizandhre"> Codepen </a> |
+        <a target="_blank" href="https://github.com/MizAndhre">GitHub</a>
+    </footer>
+
+
+    </main>
+
+    
+  </body>
+</html>

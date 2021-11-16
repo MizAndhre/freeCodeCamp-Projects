@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/f/fb/Pcloud-1024x512-20190227_%281%29.png"> -->
+</head>
+
+<body>
+  <!-- NAV BAR AND HEADER -->
+  <header id="header">
+    <div class="logo-div">
+      <a href="#intro">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Pcloud-1024x512-20190227_%281%29.png"
+          alt="Logo pCloud" id="header-img" />
+      </a>
+    </div>
+
+    <nav id="nav-bar">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#prices" class="nav-link">Prices</a></li>
+        <li><a href="#subs" class="nav-link">Subscribe </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INTRO SECTION -->
+  <section id="intro" class="intro-bckgrnd">
+    <div class="intro-info">
+      <p>
+        pCloud is your <strong>personal cloud space</strong> where you can
+        store all your files and folders.
+        <br />
+        <br />
+        It has a <strong>user-friendly interface</strong> that clearly shows
+        where everything is located and what it does.
+      </p>
+      <a href="https://www.pcloud.com" target="_blank"><i class="bi bi-cloud-upload"></i></a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <div class="container">
+    <section id="about" class="">
+      <div>
+        <h2 class="sub-title">About</h2>
+        <div class="about-info">
+          <p>
+            pCloud is a <strong>secure and easy-to-use</strong> service that lets you store up
+            to 10GB for free, offers lifetime plans for up to 2TB and
+            generally will make storing files easier than most of the
+            competition.
+          </p>
+          <p>
+            The software is available for almost <strong>any devices and platforms</strong> –
+            iOS and Android devices, MacOSX, Windows OS, and all Linux
+            distributions.
+          </p>
+        </div class="about-video">
+        <iframe id="video" width="65%" height="380" src="https://www.youtube.com/embed/Xwa15Vl9XHo"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- FEATURES SECTION -->
+    <section id="features">
+      <h2 class="sub-title">Features</h2>
+      <div class="container-features">
+        <div class="item-feature">
+          <i class="bi bi-display"></i>
+          <h3>Access on all your devices</h3>
+          <p>Save your files and keep them on your laptop with pCloud Drive, on your phone or on the web</p>
+        </div>
+
+        <div class="item-feature">
+          <i class="bi bi-share"></i>
+          <h3>Share and collaborate</h3>
+          <p>Send, relive and work with friends on every file</p>
+        </div>
+
+        <div class="item-feature">
+          <i class="bi bi-file-earmark-lock"></i>
+          <h3>Unbreakable security</h3>
+          <p>Keep your private files confidential with pCloud Crypto</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- PRICES SECTION -->
+    <section id="prices">
+      <h2 class="sub-title">Prices</h2>
+      <div class="pricing-table">
+
+        <!-- FREE -->
+        <div class="pricing-block">
+          <div class="pricing-header">
+            <div class="pricing-heading">
+              Free 10 GB
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="value">0.00</span>
+              <span class="duration">/yr</span>
+            </div>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="pricing-features">
+              <li>10 GB Storage</li>
+              <li>Marked shared links</li>
+              <li>30 days of recycled trash bin history</li>
+            </ul>
+          </div>
+
+          <div class="pricing-footer">
+            <a href="#" class="pricing-btn">Select</a>
+          </div>
+
+        </div>
+
+        <!-- SMALLER PRICE -->
+        <div class="pricing-block">
+          <div class="pricing-header">
+            <div class="pricing-heading">
+              Premium 500 GB
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="value">49.99</span>
+              <span class="duration">/yr</span>
+            </div>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="pricing-features">
+              <li>500 GB Storage</li>
+              <li>500 GB Share traffic link</li>
+              <li>Equal resource sharing</li>
+              <li>Marked shared links</li>
+              <li>30 days of recycled trash bin history</li>
+            </ul>
+          </div>
+
+          <div class="pricing-footer">
+            <a href="#" class="pricing-btn">Select</a>
+          </div>
+
+        </div> 
+
+        <!-- BIGGER PRICE -->
+        <div class="pricing-block pricing-popular">
+          <div class="pricing-header">
+            <div class="pricing-heading">
+              Premium 2 TB
+            </div>
+            <div class="pricing-price">
+              <span class="currency">$</span>
+              <span class="value">99.99</span>
+              <span class="duration">/yr</span>
+            </div>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="pricing-features">
+              <li>2 TB Storage</li>
+              <li>2 TB Share traffic link</li>
+              <li>Equal resource sharing</li>
+              <li>Marked shared links</li>
+              <li>30 days of recycled trash bin history</li>
+            </ul>
+          </div>
+
+          <div class="pricing-footer">
+            <a href="#" class="pricing-btn">Select</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- SUBSCRIPTION SECTION -->
+    <section id="subs">
+      <h2 class="sub-title">Subscribe</h2>
+      <div class="container-form">
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" >
+
+          <input type="submit" name="submit" id="submit" value="Subscribe" class="btn">
+          
+        </form>
+      </div>
+    </section>
+  </div>
+
+
+<!-- FOOTER SECTION -->
+  <footer>
+    Coded by <strong>Andhre</strong> |
+    <a target="_blank" href="https://codepen.io/mizandhre"> Codepen </a> |
+    <a target="_blank" href="https://github.com/MizAndhre">GitHub</a>
+</footer>
+
+</body>
+
+</html>

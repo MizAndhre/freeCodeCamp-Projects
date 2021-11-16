@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container-title">
+        <h1 id="title" class="title">Survey Form: Favorite Anime Genre</h1>
+        <p class="subtitle" id="description">
+            Thank you for helping us improve our anime recommendations
+        </p>
+    </div>
+
+    <section class="container-survey">
+        <form id="survey-form">
+
+            <div class="element">
+                <label for="name" id="name-label" class="form-element">Username
+                    <input type="text" id="name" name="unsername" placeholder="Enter your name" class="form-input"
+                        required>
+                </label>
+            </div>
+
+            <div class="element">
+                <label for="email" id="email-label" class="form-element">Email
+                    <input type="email" id="email" name="email" placeholder="Enter your email" class="form-input"
+                        required>
+                </label>
+            </div>
+
+            <div class="element">
+                <label for="number" id="number-label" class="form-element">Age<span class="detail"> (optional)</span>
+                    <input type="number" id="number" name="number" min="10" max="99" placeholder="Age"
+                        class="form-input">
+                </label>
+            </div>
+
+            <div class="element">
+                <label for="fav-anime" class="form-element">Select your weekly anime watch time</label>
+                <select name="watch-time" id="dropdown">
+                    <option disabled selected value>Select an option</option>
+                    <option value="30to2">+30min - 2 hour</option>
+                    <option value="2to5">+2 hour - 5 hours</option>
+                    <option value="5to10">+5 hours - 10 hours</option>
+                    <option value="10plus">+10 hours</option>
+                </select>
+            </div>
+
+            <div class="element">
+                <label class="form-element">Choose your favorite anime genre</label>
+
+                <label for="seinen" class="option-list">
+                    <input type="radio" name="anime-fav" id="seinen" value="seinen" class="form-radio">
+                    Seinen
+                </label>
+
+                <label for="shonen" class="option-list">
+                    <input type="radio" name="anime-fav" id="shonen" value="shonen" class="form-radio">
+                    Shonen
+                </label>
+
+                <label for="shoujo" class="option-list">
+                    <input type="radio" name="anime-fav" id="shoujo" value="shoujo" class="form-radio">
+                    Shoujo
+                </label>
+
+                <label for="mecha" class="option-list">
+                    <input type="radio" name="anime-fav" id="mecha" value="mecha" class="form-radio">
+                    Mecha
+                </label>
+
+                <label for="slice" class="option-list">
+                    <input type="radio" name="anime-fav" id="slice" value="slice" class="form-radio">
+                    Slice of Life
+                </label>
+
+                <label for="harem" class="option-list">
+                    <input type="radio" name="anime-fav" id="harem" value="harem" class="form-radio">
+                    Harem
+                </label>
+            </div>
+
+            <div class="element">
+                <label class="form-element">Choose an anime genre you would like to add
+                    <span class="detail">(multiple options valid)</span>
+                </label>
+
+                <label for="iyashikei" class="option-list">
+                    <input type="checkbox" name="toAdd" id="iyashikei" value="iyashikei" class="form-checkbox">
+                    Iyashikei
+                </label>
+
+                <label for="kodomomuke" class="option-list">
+                    <input type="checkbox" name="toAdd" id="kodomomuke" value="kodomomuke" class="form-checkbox">
+                    Kodomomuke
+                </label>
+
+                <label for="isekai" class="option-list">
+                    <input type="checkbox" name="toAdd" id="isekai" value="isekai" class="form-checkbox">
+                    Isekai
+                </label>
+
+                <label for="ecchi" class="option-list">
+                    <input type="checkbox" name="toAdd" id="ecchi" value="ecchi" class="form-checkbox">
+                    Ecchi
+                </label>
+
+                <label for="josei" class="option-list">
+                    <input type="checkbox" name="toAdd" id="josei" value="josei" class="form-checkbox">
+                    Josei
+                </label>
+
+                <label for="yuri" class="option-list">
+                    <input type="checkbox" name="toAdd" id="yuri" value="yuri" class="form-checkbox">
+                    Yuri
+                </label>
+            </div>
+
+            <div class="element">
+                <label for="comment" class="form-element">
+                    Any comments, suggestions or feedback? Let us know
+                </label>
+                <textarea name="" id="comment" cols="30" rows="10" placeholder="Enter you comment..."></textarea>
+            </div>
+
+            <div class="element">
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+    <footer>
+        Coded by <strong>Andhre</strong> |
+        <a target="_blank" href="https://codepen.io/mizandhre"> Codepen </a> |
+        <a target="_blank" href="https://github.com/MizAndhre">GitHub</a>
+    </footer>
+    
+    <!-- <section class="container-survey">
+
+        <form id="survey-form">
+
+            <div class="element">
+                <label id="name-label" for="name">Username
+                    <input type="text" id="name" name="name" required="true" placeholder="Enter your username">
+                </label>
+            </div>
+
+            <div class="element">
+                <label id="email-label" for="email">Email
+                    <input type="email" id="email" name="email" required="true" placeholder="Enter your email" />
+                </label>
+            </div>
+
+            <div class="element">
+                <label id="number-label" for="number">Age <span class="clue">(Optional)</span>
+                    <input type="number" id="number" name="age" min="10" max="99" placeholder="Enter your age" />
+                </label>
+            </div>
+
+            <div class="element">
+                <label> Select your weekly anime watch time
+                    <select name="watch-time" id="dropdown">
+                        <option disabled selected value>Select anime watch time</option>
+                        <option value="less1">30min - 1 hour</option>
+                        <option value="2to5">2 hour - 5 hour</option>
+                        <option value="5to10">5 hour - 10 hour</option>t
+                        <option value="10plus">+10 hours</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="element">
+                <p>Choose your favorite anime genre</p>
+
+                <label for="shonen">
+                    <input type="radio" name="fav-anime" value="shonen" id="shonen"> Shonen
+                </label>
+
+                <label for="shoujo">
+                    <input type="radio" name="fav-anime" value="shoujo" id="shoujo"> Shoujo
+                </label>
+
+                <label for="seinen">
+                    <input type="radio" name="fav-anime" value="seinen" id="seinen"> Seinen
+                </label>
+
+                <label for="mecha">
+                    <input type="radio" name="fav-anime" value="mecha" id="mecha"> Mecha
+                </label>
+
+                <label for="harem">
+                    <input type="radio" name="fav-anime" value="harem" id="harem"> Harem
+                </label>
+
+                <label for="slice">
+                    <input type="radio" name="fav-anime" value="slice" id="slice"> Slice of Life
+                </label>
+            </div>
+
+            <div class="element">
+                <p>Choose an anime genre you would like to add <span class="clue"> (Multiple options valid)</span></p>
+                <label for="iyashikei">
+                    <input type="checkbox" name="toAdd" id="iyashikei" value="iyashikei">Iyashikei
+                </label>
+
+                <label for="kodomomuke">
+                    <input type="checkbox" name="toAdd" id="kodomomuke" value="kodomomuke">Kodomomuke
+                </label>
+
+                <label for="isekai">
+                    <input type="checkbox" name="toAdd" id="isekai" value="isekai">Isekai
+                </label>
+
+                <label for="ecchi">
+                    <input type="checkbox" name="toAdd" id="ecchi" value="ecchi">Ecchi
+                </label>
+
+                <label for="josei">
+                    <input type="checkbox" name="toAdd" id="josei" value="josei">Josei
+                </label>
+            </div>
+
+            <div class="element">
+                <label for="comment">Any comments or feedback?
+                    <textarea name="comment" id="" cols="30" rows="10" 
+                    placeholder="Enter your comment..."></textarea>
+                </label>
+            </div>
+
+            <div class="element">
+                <button type="submit" id="submit" class="sub-button">Submit</button>
+            </div>
+
+    </form>
+    </section> -->
+    
+</body>
+
+</html>
